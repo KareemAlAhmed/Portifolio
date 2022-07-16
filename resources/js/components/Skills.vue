@@ -107,7 +107,7 @@
         bottom: 70px;
         left: 0;
     }
-    .backgroundName{
+    .specialized .backgroundName{
         position: absolute;
         font-size: 210px;
         top: -80px;
@@ -117,12 +117,12 @@
         color: #a9a9a933;
         font-weight: bold;
     }
-    .skillsContainer{
+    .specialized .skillsContainer{
         position: relative;
         min-height: 500px;
         max-width: 100vw;
     }
-    .skills{
+    .specialized .skills{
         /* position: absolute; 
         top: 0;
         bottom: 0;
@@ -140,7 +140,7 @@
         justify-items: stretch;
         justify-content: space-between;
     }
-    .skill{
+    .specialized .skill{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -153,7 +153,7 @@
         padding: 0 55px;
         gap: 30px;
     }
-    .skill::before{
+    .specialized .skill::before{
         content: '';
         width: 16px;
         height: 100%;
@@ -164,37 +164,37 @@
         background-color: var(--span-color);
         transition: all 0.3s ease;
     }
-    .skill:hover::before{
+    .specialized .skill:hover::before{
         width: 100%;
     }
-    .skill:hover > svg,
-    .skill:hover > h2,
-    .skill:hover > p{
+    .specialized .skill:hover > svg,
+    .specialized .skill:hover > h2,
+    .specialized .skill:hover > p{
         fill: white;
         color: white;
     }
-    svg{
+    .specialized svg{
         width: 175px;
         height: 175px;
         fill: var(--span-color);
     }
-    h2{
+    .specialized h2{
         color: var(--span-color);
         font-weight: bold;
         font-size: 60px;
     }
     @media only screen and (max-width: 768px){
-    .backgroundName{
+    .specialized .backgroundName{
         font-size: 55px;
         top: -30px;
     }
     
-    .skills{
+    .specialized .skills{
         grid-template-columns: 100%;
         grid-template-rows: repeat(9,350px);
         gap: 40px;
     }
-    h2{
+    .specialized h2{
         font-size: 40px;
     }
     .specialized::after{

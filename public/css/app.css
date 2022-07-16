@@ -1,16 +1,4 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
-
-:root{
-    --word-color:#a9a9a9;
-    --bg-color:#212121;
-    /* --span-color:#191919; */
-    --span-color:#121212;
-
-}
-
-
-
+:root{--word-color:#a9a9a9;--bg-color:#212121;--span-color:#121212}

@@ -52,7 +52,7 @@
         bottom: 70px;
         left: 0;
     }
-    .backgroundName{
+    .work .backgroundName{
         position: absolute;
         font-size: 210px;
         top: -15px;
@@ -62,12 +62,12 @@
         color: #a9a9a933;
         font-weight: bold;
     }
-    .projectsContainer{
+    .work .projectsContainer{
         position: relative;
         height: 100vh;
         max-width: 100vw;
     }
-    .projects{
+    .work .projects{
         min-height: 100%;
         z-index: 555;
         display: grid;
@@ -75,42 +75,42 @@
         grid-template-rows: repeat(2,calc((100% / 2) - 15px));
         gap: 20px;
     }
-    .firstProject{
+    .work .firstProject{
         grid-area: 1 / 1 / 3 / 3;
         background-color: #121212;
         cursor: pointer;
     }
-    .secondProject{
+    .work .secondProject{
         grid-column-start: 3;
         grid-row-start: 1;
         background-color: #3e3e42;
         cursor: pointer;
     }
-    .thirdProject{
+    .work .thirdProject{
         grid-column-start: 3;
         grid-row-start: 2;
         background-color: #1C1C1C;
         cursor: pointer;
     }
 @media only screen and (max-width: 768px){
-    .backgroundName{
+    .work .backgroundName{
         font-size: 55px;
     }
-     .work{
+    .work{
         padding: 12% 15% ;
     }
-    .projects{
+    .work .projects{
         grid-template-columns: calc(100%);
         grid-template-rows: repeat(3,calc((100% / 3) - 20px));
     }
-    .firstProject{
+    .work .firstProject{
         grid-area: 1 / 1 ;
     }
-    .secondProject{
+    .work .secondProject{
         grid-column-start: 1;
         grid-row-start: 2;
     }
-    .thirdProject{
+    .work .thirdProject{
         grid-column-start: 1;
         grid-row-start: 3;
     }
