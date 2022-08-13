@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+:root{
+    --word-color:#a9a9a9;
+    --bg-color:#212121;
+    /* --span-color:#191919; */
+    --span-color:#121212;
+
+}
+
+

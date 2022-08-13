@@ -1,14 +1,24 @@
 <template>
     <div class="work" id="work">
-        <hr>
         <div class="backgroundName" >
             {{bgName}}
         </div>
         <div class="projectsContainer">
             <div class="projects">
-                <div class="firstProject"></div>
-                <div class="secondProject"></div>
-                <div class="thirdProject"></div>
+                <div class="firstProject">
+                    <img src="../assets/nft-collection.png" >
+                    <div class="projectInfo"></div>  
+                </div>
+                
+                <div class="secondProject">
+                    <div class="projectInfo"></div>
+                </div>
+                <div class="thirdProject">
+                    <div class="projectInfo"></div>
+                </div>
+                <div class="fourthProject">
+                    <div class="projectInfo"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -64,33 +74,59 @@
     }
     .work .projectsContainer{
         position: relative;
-        height: 100vh;
+        min-height: 100vh;
         max-width: 100vw;
     }
     .work .projects{
         min-height: 100%;
         z-index: 555;
         display: grid;
-        grid-template-columns: repeat(2,30%) 37%;
-        grid-template-rows: repeat(2,calc((100% / 2) - 15px));
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4 , 300px);
+        grid-template-areas: 
+        "first"
+        "second"
+        "third"
+        "fourth"
+        ;
         gap: 20px;
+
     }
     .work .firstProject{
-        grid-area: 1 / 1 / 3 / 3;
+        grid-area: first;
         background-color: #121212;
         cursor: pointer;
+        overflow:hidden;
+        display:flex;
     }
     .work .secondProject{
-        grid-column-start: 3;
-        grid-row-start: 1;
+        grid-area: second;
         background-color: #3e3e42;
         cursor: pointer;
+        overflow:hidden;
+        display:flex;
     }
     .work .thirdProject{
-        grid-column-start: 3;
-        grid-row-start: 2;
+        grid-area: third;
         background-color: #1C1C1C;
         cursor: pointer;
+        overflow:hidden;
+        display:flex;
+    }
+    .work .fourthProject{
+        grid-area: fourth;
+        background-color: #1C1C1C;
+        cursor: pointer;
+        overflow:hidden;
+        display:flex;
+    }
+    .work .firstProject img,.work .secondProject img,
+    .work .thirdProject img,.work .fourthProject img{
+        width:40%;
+        height:100%;
+    }
+    .work .projectInfo{           
+        width:60%;
     }
 @media only screen and (max-width: 768px){
     .work .backgroundName{

@@ -39,7 +39,7 @@
         cursor: pointer;
         position: relative;
     }
-    .sections ul li:hover{
+    .sections ul li:hover a{
         color:var(--word-color);
     }
     .sections ul li::after{

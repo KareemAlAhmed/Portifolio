@@ -57,7 +57,7 @@
         border-radius: 51px;
         position: absolute;
         z-index: 99;
-        transition: all 0.2s ease 0.3s;
+        transition: all 0.1s ease-out 0.1s;
     }
     .inTouch::before{
         content: '';
